@@ -9,26 +9,26 @@ package closestPairPoints;
 
 public class mergeSortModified{
 	static class points {
-		private int xCoord = 0;
-		private int yCoord = 0;
+		private int xVal = 0;
+		private int yVal = 0;
 
-		public points(int xCoord, int yCoord) {
-			this.xCoord = xCoord;
-			this.yCoord = yCoord;
+		public points(int xVal, int yVal) {
+			this.xVal = xVal;
+			this.yVal = yVal;
 		}
-
+		
 		public int x() {
-			return xCoord;
+			return xVal;
 		}
 		
 		public int y() {
-			return yCoord;
+			return yVal;
 		}
 		public String toString() {
-			return(xCoord + " " + yCoord);
+			return(xVal + " " + yVal);
 		}
-
 	}
+
 
 	public void sortX(points[] point, int lowIndex, int highIndex) { // sort with respect to x-coordinate
 		int mid;
@@ -88,5 +88,4 @@ public class mergeSortModified{
 		Integer b = new Integer(w);
 		return(a.compareTo(b) < 0);	// if a less than b
 	}
-	
 }
